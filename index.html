@@ -21,13 +21,14 @@
   <body>
     <!--header-->
     <header>
-      <img src="assets/Booki.png" alt="Logo Booki" />
+      <div class="header_container">
+        <img src="assets/Booki.png" alt="Logo Booki" />
+    </div>
       <nav>
         <a href="#hebergement">Hébergements</a>
         <a href="#activite">Activités</a>
       </nav>
-      
-
+    </header>
       <div>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
@@ -35,26 +36,28 @@
 
       <form>
         <i class="fas fa-map-marker-alt"></i>
-        <input type="text" value="Marseille, France" />
+        <input id="input_bar" type="text" value="Marseille, France" />
         <button>Rechercher</button>
       </form>
-      <div><!--Filtres-->
+      <div class="filter_title"><!--Filtres-->
           <h2>Filtres</h2>
-          <i class="fa-solid fa-money-bill-wave"></i><a href="#">Économique</a>
-          <i class="fa-solid fa-child-reaching"></i><a href="#">Familial</a>
-          <i class="fa-solid fa-heart"></i><a href="#">Romantique</a>
-          <i class="fa-solid fa-dog"></i><a href="#">Animaux autorisés</a>
+          <div class="filter_box">
+          <i class="fa-solid fa-money-bill-wave"></i><a href="#"><span class="filter_container">Économique</span></a>
+          <i class="fa-solid fa-child-reaching"></i><a href="#"><span class="filter_container">Familial</span></a>
+          <i class="fa-solid fa-heart"></i><a href="#"><span class="filter_container">Romantique</span></a>
+          <i class="fa-solid fa-dog"></i><a href="#"><span class="filter_container">Animaux autorisés</span></a>
+        </div>
       </div>
-    </header>
+
     <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
     <main>
       <!--  Contenu du site ( dynamique )-->
-      <section>
+      <section class="marseille_lodgings">
         <h2>Hébergements à Marseille</h2>
-          <article>
-            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo auberge la Cannebière"/>
-            <strong>Auberge La Cannebière</strong>
-            <p>Nuit à partir de 25 €</p>
+          <article class="card">
+            <div class="card_image"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo auberge la Cannebière"/></div>
+            <div class="card_title"><strong>Auberge La Cannebière</strong></div>
+            <div class="card_excerpt"><p>Nuit à partir de 25 €</p></div>
           </article>
           <article>
             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Hôtel du Port"/>

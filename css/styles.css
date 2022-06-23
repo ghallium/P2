@@ -51,6 +51,10 @@ nav a {
     
 }
 
+h1 {
+    font-size: 24px;
+}
+
 /* Zone recherche */
 
 .fa-map-marker-alt {
@@ -62,6 +66,8 @@ nav a {
 
 #input_bar {
     padding: 11px;
+    border: 2px solid #f2f2f2;
+    font-weight: 700;
     
 }
 
@@ -69,25 +75,107 @@ nav a {
 
 form button {
     background-color: #0065fc;
+    padding: 12px;
     color: white;
     font-weight: 700;
+    margin-left: -5px;
+    border-radius: 10% 10% 10% 10% / 0% 25% 25% 0% ;
+    border: 0;
     
 }
 
 /* Filtres */
 
+
+
+.filter_title {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    
+    
+}
+
+.filter_box {
+    display: flex;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 .fa-money-bill-wave {
-    color: #0065fc
+    padding: 15px;
+    background-color: #deebff;
+    border-radius: 100%;
+    color: #0065fc;
+    
+    
 }
 
 .fa-child-reaching {
-    color: #0065fc
+    padding: 12px;
+    background-color: #deebff;
+    border-radius: 100%;
+    color: #0065fc;
+    
+    
 }
 
 .fa-heart {
-    color: #0065fc
+    padding: 12px;
+    background-color: #deebff;
+    border-radius: 100%;
+    color: #0065fc;
+    
 }
 
 .fa-dog {
-    color: #0065fc
+    padding: 12px;
+    background-color: #deebff;
+    border-radius: 100%;
+    color: #0065fc;
+    
+}
+
+.filter_container {
+    padding: 8px;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 10% 10% 10% 10% / 0% 40% 40% 0%; 
+    margin-left: -10px;
+    margin-right: 15px;
+    font-weight: 700;
+    display: flex;
+    
+    
+}
+
+.fa-circle-info {
+    float: left;
+}
+
+/* Hébergements à Marseille */
+
+h3 {
+    font-size: 24px;
+}
+
+.marseille_lodgings {
+    width: 70%;
+    height: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    
+    
+}
+
+.card {
+    width: 300px;
+    
+    background-color: white;
+}
+
+.card_image {
+    height: 250px;
 }
