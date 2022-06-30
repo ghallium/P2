@@ -1,9 +1,7 @@
-
-
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    max-width: 1440px; 
+    max-width: 1440px;
     margin: 0 auto;
     padding-left: 2%;
     padding-right: 2%;
@@ -40,7 +38,7 @@ nav {
     width: 80%;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
 nav a {
@@ -48,7 +46,7 @@ nav a {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    
+
 }
 
 h1 {
@@ -68,7 +66,7 @@ h1 {
     padding: 11px;
     border: 2px solid #f2f2f2;
     font-weight: 700;
-    
+
 }
 
 
@@ -79,9 +77,9 @@ form button {
     color: white;
     font-weight: 700;
     margin-left: -5px;
-    border-radius: 10% 10% 10% 10% / 0% 25% 25% 0% ;
+    border-radius: 10% 10% 10% 10% / 0% 25% 25% 0%;
     border: 0;
-    
+
 }
 
 /* Filtres */
@@ -92,7 +90,7 @@ form button {
     display: inline-flex;
     justify-content: flex-start;
     margin-bottom: 5px;
-    
+
 }
 
 h2 {
@@ -107,20 +105,22 @@ h2 {
     border-radius: 100%;
     background-color: rgb(222, 235, 255);
     z-index: 2;
-    
-    
+
+
 }
 
 .fa-child-reaching {
     color: rgb(0, 101, 252);
     position: relative;
     padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin-right: -15px;
     border-radius: 100%;
     background-color: rgb(222, 235, 255);
     z-index: 2;
-    
-    
+
+
 }
 
 .fa-heart {
@@ -131,7 +131,7 @@ h2 {
     border-radius: 100%;
     background-color: rgb(222, 235, 255);
     z-index: 2;
-    
+
 }
 
 .fa-dog {
@@ -142,7 +142,7 @@ h2 {
     border-radius: 100%;
     background-color: rgb(222, 235, 255);
     z-index: 2;
-    
+
 }
 
 
@@ -161,32 +161,40 @@ h2 {
     z-index: 1;
 }
 
+.fa-info {
+    color: rgb(0, 101, 252);
+}
 
 
-.fa-circle-info {
-    float: left;
+
+.information .fa-info {
+
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 100%;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Hébergements à Marseille */
 
 h3 {
     font-size: 24px;
-    
+
+}
+
+.lodgings {
+    width: 68%;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5% 5% 5% 5% / 11% 10% 10% 12%;
 }
 
 .marseille_lodgings {
-    width: 70%;
-    
-    padding: 30px;
-    background-color: #f2f2f2;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    border-radius: 5% 5% 5% 5% / 11% 10% 10% 12% ;
-    border: 3px solid red;
-    
-    
-    
+    justify-content: space-around;
 }
 
 .marseille_lodgings h2 {
@@ -200,30 +208,55 @@ h3 {
     margin-top: 20px;
 }
 
+.rating_5star .fa-star {
+    color: rgb(0, 101, 252);
+
+}
+
+.rating_4star .fa-star {
+    color: rgb(0, 101, 252);
+}
+
+.rating_4star .fa-star:nth-child(5) {
+    color: #f2f2f2;
+}
+
+.rating_3star .fa-star {
+    color: rgb(0, 101, 252);
+}
+
+.rating_3star .fa-star:nth-child(4){
+    color: #f2f2f2;
+}
+
+.rating_3star .fa-star:nth-child(5) {
+    color: #f2f2f2;
+}
+
 .card {
-    width: 250px;
-    padding: 5px;
-    margin: 0px auto;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 40px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
-    border-radius: 10% 10% 10% 9% / 9% 10% 10% 10% ;
-    
-    
+    border-radius: 25px;
+
+
 }
 
 .card_image {
     height: 125px;
-    
-    position: relative;
     overflow: hidden;
-    border-radius: 12% 12% 12% 12% / 12% 10% 0% 0% ;
+    border-radius: 12% 12% 12% 12% / 12% 10% 0% 0%;
 }
 
 .card_image img {
     width: 100%;
-    position: absolute;
-    top: 5%;
+    object-fit: cover;
+    object-position: center;
+   
     
+
 }
 
 .card_title {
@@ -239,7 +272,13 @@ h3 {
 /* Les plus populaires */
 
 .most_popular {
-    width: 70%;
+    width: 28%;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+.most_popular_contents {
+    width: 100%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -247,25 +286,62 @@ h3 {
 }
 
 .aside_card {
-    width: 600px;
-    margin: 0px auto;
+    width: 50%;
+    
     background-color: white;
     border: 1px solid black;
     margin-bottom: 20px;
-    padding: 5px;
     
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 10% 10% 10% 9% / 9% 10% 10% 10%;
+
 }
 
 .aside_card_image {
-    
-    height: 250px;
-    position: relative;
+
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
     overflow: hidden;
+    border-radius: 10% 10% 10% 10% / 12% 0% 0% 11%;
+
 }
 
 .aside_card_image img {
     width: 50%;
-    position: absolute;
-    top: 2%;
+    height: 100%;
     
+    top: 2%;
+
+}
+
+.aside_card_title {
+    text-align: left;
+    justify-self: baseline;
+    align-self: flex-end;
+    border: 1px solid black;
+}
+
+.aside_card_excerpt {
+    text-align: left;
+    align-self: flex-end;
+    border: 1px solid black;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.footer_nav {
+    list-style-type: none;
+
 }
