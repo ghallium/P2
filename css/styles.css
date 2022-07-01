@@ -149,11 +149,13 @@ h2 {
 
 .filter_container {
     font-weight: bold;
+    font-size: small;
     position: relative;
     color: black;
     background-color: transparent;
     padding: 8.6px;
     padding-left: 25px;
+    padding-bottom: 5px;
     margin-right: 25px;
     border: 2px solid rgb(241, 241, 241);
     border-radius: 0 20px 20px 0;
@@ -163,17 +165,24 @@ h2 {
 
 .fa-info {
     color: rgb(0, 101, 252);
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 100%;
 }
 
 
 
 .information .fa-info {
-
-    border: 2px solid rgb(241, 241, 241);
-    border-radius: 100%;
+    margin-right: 5px;
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Main */
+
+#main_block {
+    display: flex;
+    
 }
 
 /* Hébergements à Marseille */
@@ -184,7 +193,7 @@ h3 {
 }
 
 .lodgings {
-    width: 68%;
+    width: 70%;
     background-color: #f2f2f2;
     padding: 30px;
     border-radius: 5% 5% 5% 5% / 11% 10% 10% 12%;
@@ -205,11 +214,12 @@ h3 {
 .more_lodgings {
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .rating_5star .fa-star {
     color: rgb(0, 101, 252);
+    
 
 }
 
@@ -235,7 +245,7 @@ h3 {
 
 .card {
     width: 30%;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 40px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
@@ -247,7 +257,7 @@ h3 {
 .card_image {
     height: 125px;
     overflow: hidden;
-    border-radius: 12% 12% 12% 12% / 12% 10% 0% 0%;
+    border-radius: 8% 8% 8% 8% / 12% 10% 0% 0%;
 }
 
 .card_image img {
@@ -261,39 +271,57 @@ h3 {
 
 .card_title {
     text-align: left;
-    padding: 10px;
+    margin-top: 5px;
+    
+}
+
+.card_description {
+    margin-top: 5px;
 }
 
 .card_excerpt {
     text-align: left;
-    padding: 10px;
+    margin-top: 2px;
+    
 }
 
 /* Les plus populaires */
 
 .most_popular {
-    width: 28%;
-    /*display: flex;
-    flex-wrap: wrap;*/
+    width: 30%;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10%;
+    
 }
 
 .most_popular_contents {
     width: 100%;
-    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
 
 }
 
+.most_popular_contents h3 {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.most_popular_contents .fa-star {
+    margin-left: 130px;
+}
+
+
 .aside_card {
-    width: 50%;
-    
+    width: 100%;
     background-color: white;
     border: 1px solid black;
     margin-bottom: 20px;
     
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     box-shadow: 0px 5px 20px #999;
     border-radius: 10% 10% 10% 9% / 9% 10% 10% 10%;
 
@@ -301,34 +329,91 @@ h3 {
 
 .aside_card_image {
 
-    height: 100px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
     border-radius: 10% 10% 10% 10% / 12% 0% 0% 11%;
+    border: 2px solid blue;
 
 }
 
 .aside_card_image img {
     width: 50%;
     height: 100%;
-    
-    top: 2%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: center;
 
 }
 
 .aside_card_title {
-    text-align: left;
-    justify-self: baseline;
-    align-self: flex-end;
-    border: 1px solid black;
+    display: flex;
+    border: 3px solid green;
 }
 
 .aside_card_excerpt {
-    text-align: left;
-    align-self: flex-end;
-    border: 1px solid black;
+    
+    display: flex;
+    justify-content :flex-start;
+    width: 100%;
+    
+    border: 2px solid magenta;
 }
+
+.aside_card_excerpt .rating_5star {
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Activités à Marseille */
+
+.marseille_activities {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid black;
+}
+
+.activity_block1 {
+    width: 25%;
+}
+
+.activity_block2 {
+    width: 25%;
+    height: 50%;
+    
+}
+
+.activity_block3 {
+    width: 25%;
+}
+
+.activity_block4 {
+    width: 25%;
+}
+
+
+
+.activity_card {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 25px;
+}
+
+.activity_card_image {
+    
+    overflow: hidden;
+}
+
+.activity_card_title {
+    
+    padding: 8px;
+}
+
+
 
 /* Footer */
 
@@ -336,6 +421,9 @@ footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
 
 }
 
@@ -343,5 +431,16 @@ footer {
 
 .footer_nav {
     list-style-type: none;
+    margin-bottom: 20px;
+    width: 70%;
+    
+}
 
+.footer_nav .null_li {
+    padding: 1px;
+    color: #f2f2f2;
+}
+
+.footer_nav li {
+    padding: 5px;
 }

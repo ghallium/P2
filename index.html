@@ -53,6 +53,7 @@
 
     <main>
       <!--  Contenu du site ( dynamique )-->
+      <div id="main_block">
       <section class="lodgings">
         <h2>Hébergements à Marseille</h2>
         <div class="marseille_lodgings">
@@ -63,7 +64,7 @@
             </div>
             <div class="card_title"><strong>Auberge La Cannebière</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 25 €</p>
+              <p class="card_description">Nuit à partir de 25 €</p>
               <div class="rating_4star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -76,7 +77,7 @@
             </div>
             <div class="card_title"><strong>Hôtel du port</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 52 €</p>
+              <p class="card_description">Nuit à partir de 52 €</p>
               <div class="rating_5star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -90,7 +91,7 @@
             </div>
             <div class="card_title"><strong>Hôtel Les mouettes</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 76 €</p>
+              <p class="card_description">Nuit à partir de 76 €</p>
               <div class="rating_4star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -104,7 +105,7 @@
             </div>
             <div class="card_title"><strong>Hôtel de la mer</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 46 €</p>
+              <p class="card_description">Nuit à partir de 46 €</p>
               <div class="rating_3star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -119,7 +120,7 @@
             </div>
             <div class="card_title"><strong>Auberge Le Panier</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 23 €</p>
+              <p class="card_description">Nuit à partir de 23 €</p>
               <div class="rating_4star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -133,7 +134,7 @@
             </div>
             <div class="card_title"><strong>Hôtel chez Amina</strong></div>
             <div class="card_excerpt">
-              <p>Nuit à partir de 96 €</p>
+              <p class="card_description">Nuit à partir de 96 €</p>
               <div class="rating_5star">
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                   class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -145,8 +146,8 @@
       </section>
       <section class="most_popular">
       <aside class="most_popular_contents">
-        <h3>Les plus populaires</h3>
-        <i class="fa-solid fa-star"></i>
+        <h3>Les plus populaires<i class="fa-solid fa-star"></i></h3>
+        
         <article class="aside_card">
           <div class="aside_card_image">
             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -197,52 +198,65 @@
         </article>
       </aside>
     </section>
-      <aside>
-        <h4>Activités à Marseille</h4>
-        <div>
-          <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt="Photo Vieux port Marseille" />
-          <strong>Vieux port</strong>
+  </div>
+     <h4>Activités à Marseille</h4>    
+       <aside class="marseille_activities">
+          <div class="activity_block1">
+          <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Photo Vieux port Marseille" /></div>
+          <div class="activity_card_title"><strong>Vieux port</strong></div>
         </div>
-        <div>
-          <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues" />
-          <strong>Fort de Pomègues</strong>
+      </div>
+      <div class="activity_block2">
+        <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues" /></div>
+          <div class="activity_card_title"><strong>Fort de Pomègues</strong></div>
         </div>
-        <div>
-          <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul" />
-          <strong>Îles du Frioul</strong>
+        <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul" /></div>
+          <div class="activity_card_title"></div><strong>Îles du Frioul</strong></div>
         </div>
-        <div>
-          <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt="Photo Parc National des Calanques" />
-          <strong>Parc National des Calanques</strong>
+      </div>
+      <div class="activity_block3">
+        <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Photo Parc National des Calanques" /></div>
+            <div class="activity_card_title"><strong>Parc National des Calanques</strong></div>
         </div>
-        <div>
-          <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-            alt="Photo Notre Dame de La Garde" />
-          <strong>Notre-Dame-de-la-Garde</strong>
+      </div>
+      <div class="activity_block4">
+        <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Photo Notre Dame de La Garde" /></div>
+            <div class="activity_card_title"><strong>Notre-Dame-de-la-Garde</strong></div>
         </div>
-        <div>
-          <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp" />
-          <strong>Parc Longchamp</strong>
+        
+        <div class="activity_card">
+          <div class="activity_card_image"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp" /></div>
+          <div class="activity_card_title"><strong>Parc Longchamp</strong></div>
         </div>
-      </aside>
+        </div>
+      </aside>   
     </main>
 
     <footer>
       <ul class="footer_nav">
         <li><strong>A propos</strong></li>
+        <li class="null_li">test</li>
         <li>Fonctionnement du site</li>
         <li>Conditions générales de vente</li>
         <li>Données et confidentialité</li>
       </ul>
       <ul class="footer_nav">
         <li><strong>Nos hébergements</strong></li>
+        <li class="null_li">test</li>
         <li>Charte qualité</li>
         <li>Soumettre votre hôtel</li>
       </ul>
       <ul class="footer_nav">
         <li><strong>Assistance</strong></li>
+        <li class="null_li">test</li>
         <li>Centre d'aide</li>
         <li>Nous contacter</li>
       </ul>
