@@ -381,52 +381,89 @@ h3 {
 
 .marseille_activities {
     width: 100%;
+    height: 560px;
     display: flex;
     justify-content: flex-start;
-    border: 3px solid black;
-}
-
-.activity_block1 {
-    width: 25%;
-}
-
-.activity_block2 {
-    width: 25%;
-    height: 50%;
     
+  }
+
+  .activity_block1 {
+    width: 25%;
+    height: 100%;
+    
+    
+  }
+
+  .activity_block2 {
+  width: 25%;
+  
+  
+  
 }
 
 .activity_block3 {
-    width: 25%;
-    border: 2px solid red;
+  width: 25%;
+  
 }
 
 .activity_block4 {
-    width: 25%;
-    border: 2px solid blue;
+  width: 25%;
+  
 }
 
+  .activity_card {
+    
+    
+    box-shadow: 0px 5px 20px #999;
+    
+    border-radius: 25px;
+    width: 320px;
+    height: 530px;
+    
+    
+    
+  }
 
-
-.activity_card {
-    background-color: white;
-    padding: 10px;
+  .activity_card_alt {
+    
+    
     box-shadow: 0px 5px 20px #999;
     border-radius: 25px;
-}
-
-.activity_card_image {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    height: 220px;
     
-    border-radius: 12% 12% 12% 12% / 10% 10% 0% 0%; 
+  }
+
+  .activity_card_image {
+    height: 90%;
+    border-radius: 8% 8% 10% 10% / 10% 11% 0% 0%; 
     overflow: hidden;
-}
-
-.activity_card_title {
     
+  }
+
+  .activity_card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .activity_card_title {
     padding: 8px;
-}
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 25px;
+    
+    }
 
-
+    .activity_card_alt_title {
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 7% 5% 13% 14% / 0% 0% 11% 10%;
+    }
 
 /* Footer */
 
