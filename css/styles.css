@@ -244,7 +244,8 @@ h3 {
 }
 
 .card {
-    width: 30%;
+    width: 250px;
+    /*width: 30%;*/
     padding: 8px;
     margin-bottom: 40px;
     background-color: white;
@@ -417,8 +418,11 @@ h3 {
     box-shadow: 0px 5px 20px #999;
     
     border-radius: 25px;
-    width: 320px;
-    height: 530px;
+    width: 300px;
+    height: 520px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 3px solid black;
     
     
     
@@ -429,8 +433,8 @@ h3 {
     
     box-shadow: 0px 5px 20px #999;
     border-radius: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
     margin-bottom: 50px;
     height: 220px;
     
@@ -451,7 +455,7 @@ h3 {
   }
 
   .activity_card_title {
-    padding: 8px;
+    padding: 20px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
     border-radius: 25px;
@@ -459,10 +463,12 @@ h3 {
     }
 
     .activity_card_alt_title {
-    padding: 8px;
+    padding: 20px;
+    
     background-color: white;
     box-shadow: 0px 5px 20px #999;
-    border-radius: 7% 5% 13% 14% / 0% 0% 11% 10%;
+    border-radius: 25px;
+    
     }
 
 /* Footer */
@@ -494,5 +500,14 @@ footer {
 }
 
 
+/* Responsive  
 
+@media screen and (max-width: 768px) {
+    .header_container-img {
+        width: 70%;
+        height: 70%;
+    }
+
+   
+}*/
 
