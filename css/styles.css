@@ -14,6 +14,7 @@ a {
 }
 header a:hover {
     color: #0065fc;
+    border-top: 3px solid #0065fc;
 }
 .header_container {
     width: 20%;
@@ -142,6 +143,17 @@ h2 {
     border-left: none;
     z-index: 1;
 }
+
+.filter_contents .filter_container:hover{
+    background-color: #0065fc;
+    color: white;
+}
+
+.fa-dog:hover {
+    background-color: #0065fc;
+    color: rgb(222, 235, 255);
+}
+
 .fa-info {
     color: rgb(0, 101, 252);
     border: 2px solid rgb(241, 241, 241);
@@ -153,6 +165,7 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 /* Main */
 #main_block {
     display: flex;
@@ -165,7 +178,7 @@ h3 {
     width: 70%;
     background-color: #f2f2f2;
     padding: 30px;
-    border-radius: 5% 5% 5% 5% / 11% 10% 10% 12%;
+    border-radius: 15px;
 }
 .marseille_lodgings {
     width: 100%;
@@ -182,18 +195,24 @@ h3 {
     width: 100%;
     margin-top: 15px;
 }
+
+
 .rating_5star .fa-star {
     color: rgb(0, 101, 252);
+    font-size: 14px;
     display: flex;
 }
 .rating_4star .fa-star {
     color: rgb(0, 101, 252);
+    font-size: 14px;
 }
 .rating_4star .fa-star:nth-child(5) {
     color: #f2f2f2;
+
 }
 .rating_3star .fa-star {
     color: rgb(0, 101, 252);
+    font-size: 14px;
 }
 .rating_3star .fa-star:nth-child(4) {
     color: #f2f2f2;
@@ -238,7 +257,7 @@ h3 {
     margin-left: 20px;
     padding: 22px;
     background-color: #f2f2f2;
-    border-radius: 10%;
+    border-radius: 15px;
 }
 .most_popular_contents {
     width: 100%;
@@ -304,27 +323,31 @@ h3 {
 }
 .activity_block2 {
     width: 25%;
+    padding: 1%;
 }
 .activity_block3 {
     width: 25%;
 }
 .activity_block4 {
     width: 25%;
+    padding: 1%;
 }
 .activity_card {
-    box-shadow: 0px 5px 20px #999;
+    box-shadow: 0px 0px 2px 1px #D6D6D6;
     border-radius: 25px;
-    width: 90%;
+    width: 95%;
     height: 90%;
-    margin-left: 20px;
+    margin-top: 13px;
+    
 }
 .activity_card_alt {
-    box-shadow: 0px 5px 20px #999;
+    box-shadow: 0px 0px 2px 1px #D6D6D6;
     border-radius: 25px;
     margin-left: 2px;
     margin-right: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     height: 39%;
+    width: 95%;
 }
 .activity_card_image {
     height: 90%;
@@ -378,33 +401,71 @@ footer {
 }
 
 /* ---- Responsive ---- */
-/* DESKTOP */
-@media screen and(min-width: 992px) {
+/*DESKTOP*/ 
+ @media screen and (min-width: 993px) and (max-width: 1440px) {
+
+   header img {
+        border: 3px solid red;
+        
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    nav a {
+        justify-content: flex-end;
+    }
+
+   
+    #main_block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .lodgings {
         background-color: white;
+        
+        width: 100%;
+        
    }
+
+    .card {
+        width: 25%;
+    }
+
     .most_popular {
-        border-radius: 15px;
-   }
+        width: 100%;
+        border-radius: 0;
+        
+    }
+
     .most_popular_star {
-        display: inline-flex;
+        color: red;
+        border: 3px solid green;
         float: right;
-        margin-top: -25px;
+        margin-left: 0;
+
+    }
+
+   
+    
+   .most_popular_contents {
+        display: flex;
+        flex-direction: row;
    }
-    .card_popular {
-        width: 280px;
-        height: 170px;
+
+   
+   
+   .card_popular {
+        width: 90%;
+        height: 80%;
+        
    }
-    .card_popular_image img {
-        margin-left: 3px;
-        margin-top: 8px;
+
+   .hotel_name {
+        font-size: 16px;
+        margin-top: 20px;
    }
-    .most_popular_contents .rating_5star {
-        margin-top: -10px;
-   }
-    .most_popular_contents .rating_4star {
-        margin-top: -10px;
-   }
+    
     .marseille_activities {
         width: auto;
         height: auto;
@@ -427,8 +488,8 @@ footer {
         display: block;
    }
     .activity_card {
-        height: 210px;
-        width: 400px;
+        height: 39%;
+        width: 95%;
         margin-bottom: 50px;
         margin-left: 310px;
    }
@@ -440,124 +501,143 @@ footer {
 }
 
 /* Tablette */
-@media screen and(min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px)  {
     header {
-        width: 100%;
         display: block;
-   }
-    .header_container img {
-        margin: 0, auto;
-        border: 3px solid purple;
+    }
+
+    .header_container {
         width: 100%;
-   }
+        
+    }
+    
+    header img {
+        padding: 10px;
+        margin: 0px auto;
+        max-width: 150px;
+        border: 3px solid green;
+        
+    }
+
     nav {
-        width: auto;
-        display: flex;
+        width: 100%;
+        
         justify-content: center;
-        border: 2px solid green;
-   }
-    .mobile_separator {
-        width: auto;
-        display: flex;
-   }
-    .headline {
-        display: inline;
-        overflow-wrap: normal;
-   }
+        border-bottom: 3px solid #f2f2f2; ;
+    }
+
+    nav a:hover {
+        border-bottom: 3px solid rgb(0, 101, 252);
+    }
+
+    
+
     #main_block {
-        width: auto;
+        display: flex;
         flex-direction: column-reverse;
-   }
+    }
+
     .lodgings {
         background-color: white;
+        
+        width: 100%;
+        
    }
-    .most_popular {
-        width: 768px;
-        border-radius: 0px;
-   }
-    .most_popular_star {
-        display: inline-flex;
-        flex-direction: flex-end;
-        margin-top: -20px;
-        margin-left: 5px;
-   }
-    .card_popular {
+
+   .marseille_lodgings {
+        flex-direction: column;
         align-items: center;
    }
-    .marseille_activities {
-        width: auto;
-        height: auto;
-        display: block;
+
+   .most_popular {
+        width: 100%;
    }
+
+   .card_popular {
+        width: 45%;
+   }
+
+   .card {
+        width: 45%;
+   }
+
+   .marseille_activities {
+    width: auto;
+    height: auto;
+    display: block;
+    }
     .activity_block1 {
-        width: auto;
-        display: flex;
-   }
+    width: auto;
+    display: block;
+    }
     .activity_block2 {
-        width: 100%;
-        display: block;
-   }
+    width: 100%;
+    display: block;
+    }
     .activity_block3 {
-        width: auto;
-        display: flex;
-   }
+    width: auto;
+    display: block;
+    }
     .activity_block4 {
-        width: 100%;
-        display: block;
-   }
+    width: 100%;
+    display: block;
+}
+
     .activity_card {
-        height: 210px;
-        width: 400px;
-        margin-bottom: 50px;
-        margin-left: 170px;
-   }
+    
+       
+        width: 45%;
+    
+    margin: 0px auto;
+    
+    }   
     .activity_card_alt {
-        width: 400px;
-        height: 210px;
-        margin-left: 170px;
-   }
-    footer {
-        width: 768px;
-   }
+    
+        height: 39%;
+        width: 95%;
+
+    margin: 0px auto;
+    
+    }   
+
 }
 
 /* Mobile */
-@media screen and(max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
+   
     header {
-        width: auto;
         display: block;
-        border: 2px solid orangered;
-   }
-    nav {
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        border: 2px solid purple;
-   }
-    .mobile_separator {
-        width: auto;
-        display: flex;
-   }
-}
+    }
+    
+    .header_container img {
+        border: 3px solid blue;
+    }
 
+    header a:hover {
+        border-top: 0;
+    }
 
-.toto:hover{
-    background:red;
+    
+
+    
 }
 
 
 
-/* 
+
+
+
+/*
 
 TODO :: 
 
 - Ne pas mettre de décimal
 - 0 px ou 0em ou 0% = 0 donc pas besoin d'unités de mesure.
-- Border radius sur les blocs hébergement à Marseille & Les plus populaires à refaire
-- Mettre un effet au Hover sur les filtres.
-- Hébergement & Activité mettre le hover ( barre bleu ) 
-- Vignette Hébergement mettre un peu de padding à gauche pour décaller du bord
-- Réduire la taille des étoiles 
+
+
+
+
+
 - Activité à Marseille augmenter l'espace entre les images ( Verticalement )
 
 
