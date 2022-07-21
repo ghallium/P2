@@ -134,6 +134,12 @@ h2 {
     background-color: rgb(222, 235, 255);
     z-index: 2;
 }
+
+.filter {
+    display: inline-flex;
+
+}
+
 .filter_container {
     font-weight: bold;
     font-size: small;
@@ -240,10 +246,12 @@ h3 {
 .card_image {
     height: 125px;
     overflow: hidden;
-    border-radius: 8% 8% 8% 8% / 12% 10% 0% 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .card_image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -340,7 +348,7 @@ h3 {
     padding: 1%;
 }
 .activity_card {
-    box-shadow: 0px 0px 2px 1px #D6D6D6;
+    
     border-radius: 25px;
     width: 95%;
     height: 86%;
@@ -348,7 +356,7 @@ h3 {
     
 }
 .activity_card_alt {
-    box-shadow: 0px 0px 2px 1px #D6D6D6;
+    
     border-radius: 25px;
     margin-left: 2px;
     margin-right: 2px;
@@ -369,16 +377,20 @@ h3 {
     object-position: center;
 }
 .activity_card_title {
-    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 .activity_card_alt_title {
-    padding: 30px;
-    padding-bottom: 20px;
-    margin-top: -16px;
+    
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    /*margin-top: -16px;*/
     background-color: white;
     box-shadow: 0px 5px 20px #999;
     border-bottom-right-radius: 25px;
@@ -412,14 +424,16 @@ footer {
  @media screen and (min-width: 993px) and (max-width: 1440px) {
 
    header img {
-        border: 3px solid red;
+        
         
         max-width: 150px;
         padding: 10px;
     }
 
     nav a {
-        justify-content: flex-end;
+        width: 50%;
+        justify-content: space-around;
+        
     }
 
     h1 {
@@ -463,7 +477,12 @@ footer {
         width: 100%;
         border-radius: 0;
         margin-left: 0;
+        padding-left: 5px;
         
+    }
+
+    .most_popular h3 {
+        padding-left: 1%;
     }
 
     .most_popular_star {
@@ -488,6 +507,10 @@ footer {
         
    }
 
+   .card_popular_container {
+        width: 33%;
+   }
+
    .hotel_name {
         font-size: 16px;
         margin-top: 20px;
@@ -502,50 +525,60 @@ footer {
     width: 100%;
     height: 40%;
     display: block;
-    border: 3px solid red;
+    
 }
 
 .activity_block2 {
     width: 100%;
     height: 90%;
     display: block;
-    border: 3px solid blue;
+    
+    padding: 0;
 }
 
 .activity_block3 {
     width: 100%;
     height: 40%;
     display: block;
-    border: 3px solid green;
+    
 }
 
 .activity_block4 {
     width: 100%;
     height: 90%;
     display: block;
-    border: 3px solid purple;
+    
+    padding: 0;
 }
 
 .activity_card {
     width: 90%;
     height: 40%;
     margin: 0px auto;
+    margin-bottom: 2%;
 }
 
 .activity_card_alt {
     width: 90%;
     height: 20%;
     margin: 0px auto;
+    margin-bottom: 2%;
+}
+
+.activity_card_image {
+    height: 250px;
+}
+
+footer {
+    padding-left: 4%;
+    padding-bottom: 20px;
 }
     
 }
 
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 992px)  {
-    body {
-        padding-left: 2%;
-        padding-right: 2%;;
-    }
+    
     
     header {
         display: block;
@@ -560,7 +593,7 @@ footer {
         padding: 10px;
         margin: 0px auto;
         max-width: 150px;
-        border: 3px solid green;
+        
         
     }
 
@@ -570,6 +603,11 @@ footer {
         justify-content: center;
         border-bottom: 3px solid #f2f2f2; ;
     }
+
+    nav a {
+        width: 50%;
+    }
+
 
     nav a:hover {
         border-bottom: 3px solid rgb(0, 101, 252);
@@ -631,7 +669,13 @@ footer {
    .most_popular {
         width: 100%;
         margin: 0;
+        padding-left: 12px;
+        
    }
+
+   .most_popular h3 {
+    padding-left: 1%;
+}
 
    .most_popular_star {
         
@@ -641,11 +685,16 @@ footer {
     }
 
    .card_popular {
-        width: 45%;
+        width: 60%;
+        align-items: center;
    }
 
    .card {
         width: 45%;
+   }
+
+   h4 {
+        padding-left: 3%;
    }
 
    .marseille_activities {
@@ -657,42 +706,53 @@ footer {
 width: 100%;
 height: 40%;
 display: block;
-border: 3px solid red;
+
 }
 
 .activity_block2 {
 width: 100%;
 height: 90%;
 display: block;
-border: 3px solid blue;
+
+padding-left: 0;
 }
 
 .activity_block3 {
 width: 100%;
 height: 40%;
 display: block;
-border: 3px solid green;
+
 }
 
 .activity_block4 {
 width: 100%;
 height: 90%;
 display: block;
-border: 3px solid purple;
+
+padding-left: 0;
 }
 
 .activity_card {
 width: 90%;
-height: 80%;
+height: 40%;
 margin: 0px auto;
+margin-bottom: 2%;
 }
 
 .activity_card_alt {
 width: 90%;
-height: 35%;
+height: 40%;
 margin: 0px auto;
+margin-bottom: 2%;
 }
-   
+
+.activity_card_image {
+    height: 240px;
+}
+
+footer {
+    padding-bottom: 20px;
+}
 
 }
 
@@ -726,6 +786,10 @@ margin: 0px auto;
         
         justify-content: center;
         border-bottom: 3px solid #f2f2f2; ;
+    }
+
+    nav a {
+        width: 50%;
     }
 
     nav a:hover {
@@ -763,12 +827,24 @@ margin: 0px auto;
     }
 
     .filter_box {
+        width: 100%;
         padding-left:1%;
+        
     }
+
+   .filter {
+        
+        
+        
+   }
 
     #main_block {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .lodgings h2 {
+        padding-left: 5%;
     }
 
     .lodgings {
@@ -784,23 +860,33 @@ margin: 0px auto;
    }
 
    .most_popular {
-        width: 100%;
+        width: 95%;
         margin-left: 0;
+        padding-left: 12px;
+        border-radius: 0;
    }
+
+   .popular_headline {
+    padding-left: 4%;
+}
 
    .most_popular_star {
         
     display: inline-flex;
     margin-left: 5px;
 
-}
+    }
 
     .card_popular {
         height: 38%;
     }
 
+    .card_popular_container {
+        height: 33%;
+    }
+
    .card {
-        width: 85%;
+        width: 87%;
    }
 
    .marseille_activities {
@@ -812,44 +898,53 @@ margin: 0px auto;
     width: 100%;
     height: 40%;
     display: block;
-    border: 3px solid red;
+    
     }
 
     .activity_block2 {
     width: 100%;
     height: 90%;
     display: block;
-    border: 3px solid blue;
+    
+    padding-left: 0;
     }
 
     .activity_block3 {
     width: 100%;
     height: 40%;
     display: block;
-    border: 3px solid green;
+    
+    padding-left: 0;
     }
 
     .activity_block4 {
     width: 100%;
     height: 90%;
     display: block;
-    border: 3px solid purple;
+    
     }
 
     .activity_card {
     width: 90%;
-    height: 80%;
+    height: 20%;
     margin: 0px auto;
+    margin-bottom: 3%;
     }
 
     .activity_card_alt {
     width: 90%;
-    height: 35%;
+    height: 20%;
     margin: 0px auto;
+    margin-bottom: 3%;
+    }
+
+    .activity_card_image {
+        height: 120px;
     }
 
     footer {
     flex-direction: column;
+    padding: 2%;
 }
 
     .footer_section {
@@ -869,8 +964,10 @@ TODO ::
 
 - Ne pas mettre de décimal
 - 0 px ou 0em ou 0% = 0 donc pas besoin d'unités de mesure.
+- Mettre chaque filtre avec href dans une div 
 
 
+- a href classe card-popular, définir width à 33%
 
 
 
@@ -881,9 +978,11 @@ https://codepen.io/pown3d/pen/GRMQEXL
 
 LISTE PROBLEMES TECHNIQUES A CE JOUR : 
 
-- Mise en page responsive Activités à Marseille (taille des différentes cards et images)
+
 - Comment faire un retour à la ligne propre pour les filtres sur mobiles ?
-- Comment cibler la partie de l'image que l'on souhaite avec propriété object-position ?
+- Low Desktop : étoiles décalées 
+
+
 
 
 */
