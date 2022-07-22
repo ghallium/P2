@@ -295,6 +295,10 @@ h3 {
     border-radius: 15px;
 }
 
+.popular_headline {
+    display: flex;
+}
+
 .most_popular_contents {
     width: 100%;
     display: flex;
@@ -317,9 +321,12 @@ h3 {
 }
 
 .most_popular_star {
-    display: inline;
+   
+    
     color: black;
-    margin-left: 110px;
+    margin-top: 27px;
+    
+    font-size: 20px;
 }
 
 .card_popular {
@@ -864,6 +871,10 @@ footer {
     form button {
 
         font-size: 16px;
+    }
+
+    button span {
+        display: none;
     }
 
     .desktop_button {
