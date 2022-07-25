@@ -283,6 +283,10 @@ h3 {
     margin-top: 2px;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+
 /* Les plus populaires */
 .most_popular {
     width: 30%;
@@ -354,6 +358,10 @@ h3 {
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+}
+
+.card_popular:hover {
+    transform: scale(1.1);
 }
 
 .rating_5star {
@@ -442,6 +450,14 @@ h3 {
     border-bottom-left-radius: 25px;
 }
 
+.activity_card:hover {
+    transform: scale(1.1);
+}
+
+.activity_card_alt:hover {
+    transform: scale(1.1);
+}
+
 /* Footer */
 footer {
     background-color: #f2f2f2;
@@ -526,6 +542,10 @@ footer {
         width: 25%;
     }
 
+    .card:hover {
+        transform: scale(1.1);
+    }
+
     .most_popular {
         width: 100%;
         border-radius: 0;
@@ -567,6 +587,10 @@ footer {
     .hotel_name {
         font-size: 15px;
         margin-top: 11px;
+    }
+
+    h4 {
+        padding-left: 4%;;
     }
 
     .marseille_activities {
@@ -714,7 +738,7 @@ footer {
 
     .lodgings {
         background-color: white;
-
+        padding-bottom: 5px;
         width: 100%;
 
     }
@@ -749,6 +773,10 @@ footer {
 
     .card {
         width: 45%;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
     }
 
     h4 {
@@ -919,7 +947,7 @@ footer {
 
     .lodgings {
         background-color: white;
-
+        padding-bottom: 2px;
         width: 100%;
 
     }
@@ -959,7 +987,12 @@ footer {
         width: 87%;
     }
 
+    .card:hover {
+        transform: scale(1.1);
+    }
+
     h4 {
+        
         padding-left: 4%;
     }
 
