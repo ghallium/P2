@@ -1060,36 +1060,3 @@ footer {
 
 }
 
-
-
-
-
-
-/*
-
-TODO :: 
-
-- Ne pas mettre de décimal
-- 0 px ou 0em ou 0% = 0 donc pas besoin d'unités de mesure.
-- Mettre chaque filtre avec href dans une div 
-
-
-- a href classe card-popular, définir width à 33%
-
-
-
-- Activité à Marseille augmenter l'espace entre les images ( Verticalement )
-
-
-https://codepen.io/pown3d/pen/GRMQEXL
-
-LISTE PROBLEMES TECHNIQUES A CE JOUR : 
-
-
-- Comment faire un retour à la ligne propre pour les filtres sur mobiles ?
-- Low Desktop : étoiles décalées 
-
-
-
-
-*/
