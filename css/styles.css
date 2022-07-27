@@ -486,7 +486,7 @@ footer {
 
 /* ---- Responsive ---- */
 /*DESKTOP*/
-@media screen and (min-width: 993px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) and (max-width: 1440px) {
 
     header img {
 
@@ -654,7 +654,7 @@ footer {
 }
 
 /* Tablette */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
 
     header {
@@ -712,6 +712,10 @@ footer {
     form button {
 
         font-size: 16px;
+    }
+
+    button span {
+        display: none;
     }
 
     .desktop_button {
@@ -843,7 +847,7 @@ footer {
 }
 
 /* Mobile */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
     body {
         padding-left: 2%;
@@ -957,7 +961,7 @@ footer {
         align-items: center;
     }
 
-    .most_popular {
+    .most_popular { 
         width: 95%;
         margin-left: 0;
         padding-left: 12px;
